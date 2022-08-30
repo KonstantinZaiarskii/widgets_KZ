@@ -1,0 +1,154 @@
+/*null css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: Poppins;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr: #222327;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vw;
+  min-height: 100vh;
+  min-width: 320px;
+  background: var(--clr);
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  background: none;
+  display: block;
+}
+
+button,
+button:hover,
+button:focus {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/*/null css*/
+
+//first page
+.niceMenu {
+  // .niceMenu__ul
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  // .niceMenu__Menu
+  &__Menu {
+    border: 1px solid rgba(255, 255, 255, 0.202);
+    border-radius: 30px;
+    & > a {
+      padding: 10px;
+    }
+    // .niceMenu__Menu_White
+    &_White {
+    }
+  }
+  // .niceMenu__img
+  &__img {
+    max-width: 500px;
+    height: 168px;
+    @media (max-width: 400px) {
+      max-width: 300px;
+      height: 170px;
+      justify-content: center;
+    }
+  }
+}
+.niceMenu {
+  // .lniceMenu__Menu
+  &__Menu {
+    // .lniceMenu__Menu_Black
+    &_Black {
+    }
+  }
+}
