@@ -115,7 +115,8 @@ h6 {
 /*/null css*/
 .navigation {
   position: relative;
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   height: 120px;
   box-shadow: 25px 25px 75px 0px rgba(0, 0, 0, 0.25), 10px 10px 70px 0px rgba(0, 0, 0, 0.25),
     inset 5px 5px 10px rgba(0, 0, 0, 0.25), inset 5px 5px 20px rgba(255, 255, 255, 0.2),
@@ -124,6 +125,10 @@ h6 {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+
+  @media(max-width:426px) {
+    max-width: 94vw;
+  }
 
   & li {
     &::before {
@@ -147,6 +152,7 @@ h6 {
         0 0 40px #0f0,
         0 0 50px #0f0;
     }
+
   }
 
   & ul {
@@ -158,6 +164,9 @@ h6 {
       list-style: none;
       width: 80px;
       margin: 0 5px;
+      @media(max-width:426px){
+        width: 16vw;
+      }
 
       & a {
         display: flex;
@@ -221,7 +230,7 @@ h6 {
         transform: translateY(10px);
       }
 
-    
+
     }
   }
 }
