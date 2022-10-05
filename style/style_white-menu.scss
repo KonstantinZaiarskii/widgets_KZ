@@ -26,6 +26,10 @@ body {
   min-width: 320px;
   background: var(--clr);
   align-items: center;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 aside,
@@ -36,12 +40,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1.5;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 input,
 button,
