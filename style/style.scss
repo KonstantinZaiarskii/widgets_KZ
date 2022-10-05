@@ -19,12 +19,14 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   padding-top: 4vw;
   min-height: 100vh;
   min-width: 320px;
   background: var(--clr);
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 aside,
@@ -35,12 +37,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1.5;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 input,
 button,
@@ -114,17 +110,17 @@ h6 {
 
 //first page
 .niceMenu {
-
   // .niceMenu__ul
   &__block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px 100px;
     font-size: 30px;
     padding-top: 20px;
 
     @media(max-width:769px) {
-      flex-wrap: wrap;
-      justify-content: center;
+      
     }
   }
 
@@ -163,13 +159,8 @@ h6 {
     }
   }
 }
-
-.niceMenu {
-
-  // .lniceMenu__Menu
-  &__Menu {
-
-    // .lniceMenu__Menu_Black
-    &_Black {}
-  }
+#bg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
