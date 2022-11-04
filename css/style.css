@@ -103,11 +103,7 @@ img {
   border-radius: 30px;
   max-width: 508px;
   width: 100%;
-}
-@media (max-width: 7695px) {
-  .niceMenu__Menu {
-    width: 70%;
-  }
+  padding: calc(10px + 40 * (100vh - 320px) / 1280);
 }
 .niceMenu__Menu > a {
   padding: 10px;

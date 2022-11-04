@@ -113,10 +113,8 @@ img {
     border-radius: 30px;
     max-width: 508px;
     width: 100%;
+    padding: calc(10px + (50 - 10)* ((100vh - 320px) / (1600 - 320)));
 
-    @media(max-width:7695px) {
-      width: 70%;
-    }
 
     &>a {
       padding: 10px;
