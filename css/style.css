@@ -1,7 +1,7 @@
 /*null css*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -89,6 +89,10 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  margin-bottom: 15px;
+}
+
 /*/null css*/
 .niceMenu__block {
   display: flex;
@@ -127,7 +131,7 @@ img {
 
 #bg img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
