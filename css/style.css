@@ -1,7 +1,7 @@
 /*null css*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 * {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -103,11 +103,7 @@ img {
   border-radius: 30px;
   max-width: 508px;
   width: 100%;
-}
-@media (max-width: 7695px) {
-  .niceMenu__Menu {
-    width: 70%;
-  }
+  padding: calc(10px + 40 * (100vh - 320px) / 1280);
 }
 .niceMenu__Menu > a {
   padding: 10px;
