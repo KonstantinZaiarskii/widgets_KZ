@@ -14,7 +14,7 @@ $mail->IsHTML(true);
 //от кого письмо
 $mail->setFrom('info@fls.guru', 'Konstantin');
 //Кому
-$mail->addAddress('code@fls.guru');
+$mail->addAddress('kostja-kot@mail.ru');
 //тема письма
 $mail->Subject = "Тестовое письмо";
 
@@ -68,4 +68,3 @@ if (!empty($_FILES['image']['tmp_name'])) {
 
       header('Content-Type : application/json');
       echo json_encode($response);
-?>
