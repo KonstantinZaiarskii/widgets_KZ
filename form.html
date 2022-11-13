@@ -15,22 +15,24 @@
       <form action="#" id="form" class="form__body">
         <h1 class="form__title">Отправка данных на почту</h1>
         <div class="form__item">
-          <label for="formName" class="form__label">Имя*</label>
-          <input id="formName" type="text" ame="name" class="form__input">
+          <label for="formName" class="form__label">Имя*:</label>
+          <input id="formName" type="text" name="name" class="form__input _req">
         </div>
         <div class="form__item">
-          <label for="formEmail" class="form__label">E-mail</label>
-          <input id="formEmail" type="text" name="email" class="form__input">
+          <label for="formEmail" class="form__label">E-mail*:</label>
+          <input id="formEmail" type="text" name="email" class="form__input _req _email">
         </div>
         <div class="form__item">
           <div class="form__title">Левша или правша?</div>
           <div class="options">
             <div class="options__item">
-              <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+              <input id="formRightHanded" checked type="radio" value="right" name="hand"
+                class="options__input">
               <label for="formRightHanded" class="options__label"><span>Правша</span></label>
             </div>
             <div class="options__item">
-              <input id="formLeftHanded" type="radio" name="hand" value="left" class="options__input">
+              <input id="formLeftHanded" type="radio" name="hand" value="left"
+                class="options__input">
               <label for="formLeftHanded" class="options__label"><span>Левша</span></label>
             </div>
           </div>
@@ -49,7 +51,7 @@
           <label for="formMassage" class="form__label">Сообщение:</label>
           <textarea id="formMassage" name="message" class="form__input"></textarea>
         </div>
-        <div class="form__item">
+        <div class="form__item" id="form__item">
           <div class="form__label">Прикрепить фото</div>
           <div class="file">
             <div class="file__item">
@@ -57,12 +59,12 @@
                 class="file__input">
               <div class="file__button">Выбрать</div>
             </div>
-            <div class="file__preview"></div>
+            <div id="formPreview" class="file__preview"></div>
           </div>
         </div>
         <div class="form__item">
           <div class="checkbox">
-            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
+            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
             <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку
                 персональных данных в соответствии с <a href="#">Условиями</a>*</span></label>
           </div>
